@@ -1,0 +1,50 @@
+LinXup - AI-Powered Broken Link Checker
+Copyright (c) 2024 jbuz13
+
+================================================================================
+
+LinXup is based on Linkinator, an open-source broken link checker.
+
+Linkinator
+Copyright (c) Justin Beckwith <justin.beckwith@gmail.com> (jbeckwith.com)
+Licensed under the MIT License
+https://github.com/JustinBeckwith/linkinator
+
+================================================================================
+
+MIT License (Linkinator)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+================================================================================
+
+THIRD-PARTY NOTICES
+
+LinXup includes the following third-party software components from Linkinator.
+See package.json for a complete list of dependencies and their licenses.
+
+Major dependencies inherited from Linkinator include:
+- chalk (MIT License)
+- htmlparser2 (MIT License)
+- marked (MIT License)
+- meow (MIT License)
+- undici (MIT License)
+
+For complete dependency information, see the package.json file and the
+node_modules directory.

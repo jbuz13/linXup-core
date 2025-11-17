@@ -1,15 +1,15 @@
 {
-	"name": "linkinator",
-	"description": "Find broken links, missing images, etc in your HTML. Scurry around your site and find all those broken links.",
-	"version": "7.5.0",
+	"name": "linxup",
+	"description": "AI-powered broken link checker that explains what broke, why it matters, and suggests fixes. Built for nonprofits and businesses that need intelligent link monitoring.",
+	"version": "0.1.0",
 	"license": "MIT",
-	"repository": "JustinBeckwith/linkinator",
-	"author": "Justin Beckwith",
+	"repository": "jbuz13/linXup-core",
+	"author": "jbuz13",
 	"exports": "./build/src/index.js",
 	"types": "./build/src/index.d.ts",
 	"type": "module",
 	"bin": {
-		"linkinator": "./build/src/cli.js"
+		"linxup": "./build/src/cli.js"
 	},
 	"scripts": {
 		"prepare": "husky && npm run build",
@@ -19,7 +19,7 @@
 		"test": "vitest",
 		"fix": "biome check --write .",
 		"lint": "biome check .",
-		"docs-test": "node build/src/cli.js ./README.md",
+		"docs-test": "node build/src/cli.js ./README.md --markdown",
 		"update-schema-org-types": "node src/tools/update-schema-org-types.ts"
 	},
 	"dependencies": {
@@ -53,7 +53,10 @@
 		"build/src"
 	],
 	"keywords": [
+		"ai link checker",
+		"intelligent link validator",
 		"broken link checker",
+		"ai-powered",
 		"link checker",
 		"dead link checker",
 		"link validator",
@@ -70,6 +73,11 @@
 		"seo tools",
 		"website validator",
 		"link tester",
+		"nonprofit tools",
+		"website monitoring",
+		"gpt-4",
+		"openai",
+		"link analysis",
 		"url",
 		"broken",
 		"link",
