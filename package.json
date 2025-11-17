@@ -23,6 +23,7 @@
 		"update-schema-org-types": "node src/tools/update-schema-org-types.ts"
 	},
 	"dependencies": {
+		"@google/generative-ai": "^0.24.1",
 		"@types/pg": "^8.15.6",
 		"chalk": "^5.0.0",
 		"dotenv": "^17.2.3",
