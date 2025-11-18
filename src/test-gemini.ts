@@ -8,8 +8,8 @@
 
 import * as dotenv from 'dotenv';
 import {
-	createGeminiAnalyzer,
 	type BrokenLinkInput,
+	createGeminiAnalyzer,
 } from './ai/gemini-analyzer.js';
 
 // Load environment variables
@@ -23,8 +23,7 @@ const sampleBrokenLinks: BrokenLinkInput[] = [
 		foundOnUrl: 'https://alaskaimpactalliance.org/',
 		foundOnTitle: 'Alaska Impact Alliance - Home',
 		linkText: 'Donate Now',
-		htmlContext:
-			'<a href="/donate-now" class="btn btn-primary">Donate Now</a>',
+		htmlContext: '<a href="/donate-now" class="btn btn-primary">Donate Now</a>',
 		surroundingText:
 			'Support our mission to help Alaska nonprofits thrive. Donate Now to make a difference.',
 	},
@@ -46,12 +45,10 @@ const sampleBrokenLinks: BrokenLinkInput[] = [
 		foundOnTitle: 'Alaska Impact Alliance - Home',
 		linkText: 'Contact Us',
 		htmlContext: '<a href="/contact-us">Contact Us</a>',
-		surroundingText:
-			'Have questions? Contact Us to speak with our team.',
+		surroundingText: 'Have questions? Contact Us to speak with our team.',
 	},
 	{
-		brokenUrl:
-			'https://alaskaimpactalliance.org/blog/2019/archived-post.html',
+		brokenUrl: 'https://alaskaimpactalliance.org/blog/2019/archived-post.html',
 		statusCode: 404,
 		foundOnUrl: 'https://alaskaimpactalliance.org/blog',
 		foundOnTitle: 'Blog Archive',

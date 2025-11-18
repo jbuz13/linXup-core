@@ -155,7 +155,12 @@ Return ONLY valid JSON in this exact format:
 	 * Validate importance level
 	 */
 	private validateImportance(importance: string): ImportanceLevel {
-		const validLevels: ImportanceLevel[] = ['critical', 'high', 'medium', 'low'];
+		const validLevels: ImportanceLevel[] = [
+			'critical',
+			'high',
+			'medium',
+			'low',
+		];
 		if (validLevels.includes(importance as ImportanceLevel)) {
 			return importance as ImportanceLevel;
 		}
@@ -274,10 +279,7 @@ Return ONLY valid JSON in this exact format:
 					await new Promise((resolve) => setTimeout(resolve, 1000));
 				}
 			} catch (error) {
-				console.error(
-					`Failed to analyze ${input.brokenUrl}:`,
-					error,
-				);
+				console.error(`Failed to analyze ${input.brokenUrl}:`, error);
 				results.push(this.getFallbackAnalysis(input));
 			}
 		}
